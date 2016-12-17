@@ -21,7 +21,7 @@ public class StackScript : MonoBehaviour
 
     private const float BOUNDS_SIZE = 3.5f;
     private const float STACK_MOVING_SPEED = 0.1f;
-    private const float ERROR_MARGIN = 0.1f;
+    private const float ERROR_MARGIN = 0.15f;
     private const float STACK_BOUNDS_GAIN = 0.25f;
 
     private const int COMBO_GAIN = 4;

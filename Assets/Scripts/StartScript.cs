@@ -25,6 +25,8 @@ public class StartScript : MonoBehaviour {
 
     public GameObject shopMenu;
 
+    public AudioClip buttonSound;
+
     // Use this for initialization
     void Start () {
 
@@ -165,5 +167,11 @@ public class StartScript : MonoBehaviour {
         if (settingsMenu.activeInHierarchy == true)
             settingsMenu.SetActive(false);
         shopMenu.SetActive(true);
+    }
+
+    public void PlaySfx()
+    {
+        sfxSrc.clip = buttonSound;
+        sfxSrc.Play();
     }
 }
